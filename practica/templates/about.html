@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Alojamientos</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="http://2.bp.blogspot.com/_TPN1d-lplzE/TURnYF8OZnI/AAAAAAAAI70/Z6SUKr1kVkA/s1600/triangulo-pintores.gif">
+</head>
+<body>
+
+  <div id="cabecera">
+  <div id="banner">
+    <img id="logo" src="http://www.smart-hotel.es/images/Logo%20Black%20horizontal.png"></img>
+  </div>
+  <div id="usuario">
+    {% if usuario %}
+      <h3> {{usuario}}</h3>
+      <a href='/logout2'>Logout</a><br>
+    {% else %}
+      <h3>Sign in</h3>
+      <form action="/login" method="post" >
+        {% csrf_token %}
+        <label style="margin-left:10px" for="username">Username:</label><input style="margin-right:10px;" type="text" name="username" value="" />
+        </br><label for="password">Password:</label><input type="password" name="password" value=""/>
+        <p><input type="submit" value="Login"></p>
+      </form>
+    {% endif%}
+  </div>
+</div>
+<form class="teclas" action="/">
+  <input type="button" value="Inicio" onClick="window.location = '/';">
+  <input type="button" value="Todos" onClick="window.location = '/alojamientos';">
+  <input type="button" value="About" onClick="window.location = '/about';">
+</form>
+
+
+  <div style="text-align:center;clear: both; background-color:#CCE5FF;border-radius: 5px;border: 3px solid black;">
+  {{contenido|safe}}
+  </div>
+ <footer>Esta aplicacion utiliza datos del portal de datos abiertos de la ciudad de Madrid</footer>
+</body>
+</html>

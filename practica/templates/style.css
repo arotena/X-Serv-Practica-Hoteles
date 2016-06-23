@@ -1,0 +1,72 @@
+body{
+  text-align: center;
+  background-color: {{fondo|safe}};
+  font-size: {{size|safe}};
+}
+#cabecera{
+  height: 170px;
+}
+#banner{
+  float: left;
+  width: 65%;
+  overflow: hidden;
+  text-align: left;
+}
+#logo{
+  height: 100%;
+  width: 90%
+}
+#usuario{
+  float: left;
+  width: 30%;
+
+}
+#paguser,#comentario{
+  float:left;
+  width: 40%;
+}
+#alojamientos{
+  float: left;
+}
+#coments{
+  clear: both;
+}
+.teclas{
+  clear: both;
+}
+footer{
+  clear: both;
+  color: gray;
+  text-align: left;
+  padding-top: 20px;
+}
+#anadir{
+  background-color: blue;
+  color: white;
+}
+#coleccion{
+  float: left;
+  width: 60%;
+}
+#hotel{
+  float: left;
+  width: 60%;
+  overflow: hidden;
+}
+#enviar{
+  background-color: orange;
+}
+#formu{
+  padding-top: 30%
+}
+#idiomas{
+  margin-bottom: 20px;
+}
+#css{
+  float: left;
+  text-align: center;
+  width: 40%
+}
+.imgalo{
+  width: 40%
+}
