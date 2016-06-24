@@ -2,7 +2,7 @@
 Repositorio para la práctica final de SARO/SAT. Curso 2015-2016
 
 Nombre: Alberto Rodriguez Tena</br>
-Titulacion: Tecnologías de la telecomunicacion</br>
+Titulacion: Tecnologías de la Telecomunicación</br>
 Usuario_Lab: atena</br>
 Usuario_GitHub: arotena</br>
 <h3>Descripción:</h3>
